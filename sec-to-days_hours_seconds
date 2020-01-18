@@ -1,0 +1,20 @@
+#include <iostream>
+
+int main()
+{
+    using namespace std;
+ const int sec_per_min = 60;
+ const int sec_per_day = 86400;
+ int sec; 
+ int min;
+ int day;
+ cout << "Enter the number of seconds:" << endl;
+ cin >> sec;
+ day = sec / sec_per_day;
+ min = sec % sec_per_day;
+ int seconds = min % sec_per_min;
+ cout << sec << "seconds =" << day <<" days, "
+ << min << " minuts, and " << seconds << " seconds." << endl;
+ return 0;
+ 
+}
